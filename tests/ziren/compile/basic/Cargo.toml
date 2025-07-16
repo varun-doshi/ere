@@ -1,0 +1,7 @@
+[workspace]
+members = [ "app"]
+resolver = "2"
+
+[workspace.dependencies]
+zkm-zkvm = { git = "https://github.com/zkMIPS/zkMIPS.git" }
+serde = { version = "1.0.205", features = ["derive"] }

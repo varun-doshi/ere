@@ -1,0 +1,23 @@
+[package]
+name = "ere-ziren"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+
+[dependencies]
+zkm-sdk = { git = "https://github.com/zkMIPS/zkMIPS.git" }
+zkvm-interface = { workspace = true }
+toml = "0.8"
+tempfile = "3.3"
+bincode = "1.3"
+thiserror = "2"
+tracing = "0.1"
+
+[build-dependencies]
+build-utils = { workspace = true }
+
+[lib]
+name = "ere_ziren"
+path = "src/lib.rs"
